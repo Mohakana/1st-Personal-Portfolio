@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Sidebar styling */
+nav {
+    width: 200px;
+    background-color: #ffcce6; /* Light pink color */
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h2 {
+    text-align: center;
+    color: #ff66b2; /* Darker pink color */
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: block;
+    color: #333; 
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: #ff99cc; /* Pink color for hover */
+    color: white;
+}
+
+main {
+    margin-left: 220px; /* Same as the width of the sidebar */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+header img {
+    margin-right: 20px;
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border: 2px solid #ff66b2; /* Add a border to the image */
+}
+
+h1, h2 {
+    color: #ff66b2; /* Darker pink color */
+}
+
+p, ol, ul {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcce6; /* Light pink color */
+    border-top: 1px solid #ff99cc; /* Pink color for border */
+}
